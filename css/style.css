@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+body {
+  margin: 0px;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a1e;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: url("../img/nav-bkg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.223);
+  margin: 20px;
+  margin-bottom: 0px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  list-style: none;
+  display: flex;
+  margin: 20px;
+}
+
+.navbar li {
+  margin-right: 20px;
+  align-items: right;
+}
+
+.navbar li:hover {
+  text-shadow: 0 0 10px #00000096;
+  transition: text-shadow 0.3s;
+}
+
+.navbar h3 {
+  margin: 20px;
+}
+
+.navbar h3:hover {
+  text-shadow: 0 0 10px #00000096;
+  transition: text-shadow 0.3s;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/bkgs.jpeg");
+
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 20px;
+
+  padding: 203px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 1px #00000060;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text h1 {
+  margin: 0px;
+  font-size: 60px;
+}
+
+.hero-text p {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+
+.hero-text button {
+  border: 2px solid rgb(255, 109, 236);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 109, 236, 0.188);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  box-shadow: 0 0 10px 1px #ff74e8ae;
+  transform: scale(1.05) perspective(1px);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card-container {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 45px;
+  margin: 16px;
+}
+
+.card {
+  position: relative;
+  width: 310px auto;
+  height: auto;
+  background: #212325;
+  border-radius: 25px;
+  box-shadow: 0 15px 20px #21252461;
+  color: white;
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+  box-shadow: 0 0 10px 1px #00000060;
+}
+
+.banner {
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/bkg-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 12px;
+  padding: 50px;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 10px 1px #00000060;
+}
+
+.banner h1 {
+  text-shadow: 0 0 10px 1px black;
+}
+
+.button {
+  padding: 15px;
+  background-color: rgb(78, 78, 255);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.button:hover {
+  box-shadow: 0 0 10px rgba(100, 100, 255, 0.555);
+  transform: scale(1.05) perspective(1px);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.button-green {
+  padding: 15px;
+  background-color: rgb(108, 255, 140);
+  color: black;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.button-green:hover {
+  box-shadow: 0 0 10px rgba(100, 255, 126, 0.555);
+  transform: scale(1.05) perspective(1px);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.footer {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.223);
+  margin: 12px;
+  margin-top: auto;
+  padding: 5px;
+  background-color: #212325;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer a {
+  color: rgb(255, 208, 208);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-shadow: 0 0 10px rgba(255, 208, 208, 0.56);
+  transition: text-shadow 0.3s;
+}
+
