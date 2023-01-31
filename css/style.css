@@ -67,9 +67,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  margin: 20px;
+  margin: 2vh;
 
-  padding: 203px;
+  padding: 25vh;
+  padding-left: 5%;
   border-radius: 20px;
   box-shadow: 0 0 10px 1px #00000060;
 }
@@ -217,3 +218,94 @@ body {
   transition: text-shadow 0.3s;
 }
 
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  margin: 10px;
+
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-color: white;
+  margin: 3px 0px;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-7px, -5px);
+}
+
+.mobile-nav {
+  position: fixed;
+  left: 100%;
+  width: 90%;
+  display: block;
+  background-color: #1a1a1e;
+  padding-top: 20px;
+  transition: 0.4s;
+  z-index: 98;
+  border-radius: 40px;
+  margin-top: 30vh;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 30px;
+  box-shadow: 0 0 50px #242429;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+
+  padding: 12px;
+  background-color: #212325;
+
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.mobile-nav a:hover {
+  background-color: #26292c;
+  transform: scale(1.05) perspective(1px);
+  box-shadow: 0 0 10px #26292c;
+  transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s;
+}
+
+
+@media (max-width:600px) {
+  .navbar ul {
+    display: none;
+  }
+}
+
+@media (min-width:600px) {
+  .hamburger {
+    display: none;
+  }
+}
